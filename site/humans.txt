@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Aaron Brownlee
+    hello [email at sign] misterbrownlee [dot com]
+    Title: IT MAKES THE THINGS OR IT GETS THE HOSE
+    Github: misterbrownlee
+    Twitter: nope
+
+# THANKS
+
+    todo... lol
+
+# TECHNOLOGY
+
+    HTML5, CSS3, Node, Sass, Metalsmith, Pug ... look in package.json :)

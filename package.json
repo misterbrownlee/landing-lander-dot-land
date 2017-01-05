@@ -1,0 +1,67 @@
+{
+  "name": "landing-lander-dot-land",
+  "version": "0.0.1",
+  "description": "It makes the landing page or it gets the hose",
+  "main": "tasks/build.js",
+  "scripts": {
+    "build": "run-s clean css-prod copy:meta",
+    "clean": "rimraf dist",
+    "lint": "eslint tasks/*.js",
+    "test": "npm run test-all",
+    "copy:meta": "cp src/*.txt dist",
+    "compile": "./tasks/compile-site.js",
+    "css-prod": "node-sass --output-style compressed scss/index.scss site/css/landing.min.css",
+    "css-dev": "node-sass scss/index.scss site/css/landing.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misterbrownlee/landing-lander-dot-land.git"
+  },
+  "keywords": [
+    "THE",
+    "HOSE"
+  ],
+  "author": "brownlee <brownlee@adobe.com>",
+  "license": "SEE LICENSE IN ./LICENSE",
+  "bugs": {
+    "url": "https://github.com/misterbrownlee/landing-lander-dot-land/issues"
+  },
+  "homepage": "https://github.com/misterbrownlee/landing-lander-dot-land#readme",
+  "devDependencies": {
+    "any-promise": "^1.3.0",
+    "bluebird": "^3.4.7",
+    "eslint": "^3.12.2",
+    "fs-promise": "^1.0.0",
+    "metalsmith": "^2.3.0",
+    "metalsmith-autoprefixer": "^1.1.1",
+    "metalsmith-build-date": "^0.2.0",
+    "metalsmith-clean-css": "^5.0.0",
+    "metalsmith-collections": "^0.9.0",
+    "metalsmith-define": "^2.0.1",
+    "metalsmith-fingerprint": "^1.0.3",
+    "metalsmith-ignore": "^0.1.2",
+    "metalsmith-layouts": "^1.7.0",
+    "moment": "^2.17.1",
+    "node-sass": "^4.1.1",
+    "npm-run-all": "^4.0.0",
+    "pug": "^2.0.0-beta6",
+    "rimraf": "^2.5.4"
+  },
+  "siteDetails": {
+    "site": {
+      "url": "http://landing.lander.dot.land.misterbrownlee.com",
+      "title": "landing lander",
+      "presentationName": "A Landing Static Site ",
+      "description": "The landing site for my thing.",
+      "pitch": [
+        "Welcome to the pitch for when in elevators!",
+        "Did you get that thing I sent you?"
+      ]
+    },
+    "googleAnalytics": "UA-9999999-2",
+    "owner": {
+      "url": "https://git.corp.adobe.com/misterbrownlee",
+      "name": "Landing Lander"
+    }
+  }
+}
